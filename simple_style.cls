@@ -238,10 +238,14 @@
 	  \vspace{-16ex}
 	  \leavevmode\hbox to 
 	  \textwidth{\hfil\@detailsbox{\@addressone\\
-			               \@emailone\ $|$ \@emailtwo\\
-				       Webpage : \@website\\
-				       Github : \@github\\
-				       \@phone\\\\}}\par
+	  				   \@phoneone\ $|$ \@phonetwo\\
+%			               \@emailone\ $|$ \@emailtwo\\
+				       \@emailone\\
+%				       Webpage : \@website\\
+%				       Github : \@github\\
+				       \@github\\
+				       \@linkedin\\
+				       \\}}\par
   }%
   % Add a horizontal line after name
   \color{lightestgray}\fullline
@@ -520,7 +524,9 @@
 \def\emailtwo#1{\def\@emailtwo{\href{mailto:#1}{#1}}}
 \def\website#1#2{\def\@website{\href{#1}{#2}}}
 \def\github#1#2{\def\@github{\href{#1}{#2}}}
-\def\phone#1{\def\@phone{#1}}
+\def\linkedin#1#2{\def\@linkedin{\href{#1}{#2}}}
+\def\phoneone#1{\def\@phoneone{#1}}
+\def\phonetwo#1{\def\@phonetwo{#1}}
 \def\cusemph#1{\textcolor{darkgray}{\textbf{#1}}}
 \def\timeline#1{\hfill\textcolor{midgray}{\textit{#1}}}
 \def\supervisor#1{\textcolor{midgray}{\textit{#1}}}
@@ -533,7 +539,9 @@
 \def\@emailtwo{}
 \def\@website{}
 \def\@github{}
-\def\@phone{}
+\def\@linkedin{}
+\def\@phoneone{}
+\def\@phonetwo{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % use this to define your address, this may be called more than once.

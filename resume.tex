@@ -16,6 +16,9 @@
 % Further modified by:
 % Rohan Bavishi <rohan.bavishi95@gmail.com> 9/20/2016
 %
+% Used by:
+% Penserbjorne  <paul.aguilar.enriquez@hotmail.com> 29/11/2016
+%
 % Important note:
 % This template requires the simple_style.cls file to be in the same directory 
 % as the .tex file. The res.cls file provides the resume style used for 
@@ -48,6 +51,7 @@
 
 \documentclass[mm]{simple_style}  
 
+\usepackage[spanish]{babel}
 % Default font is the helvetica postscript font
 \usepackage{helvet}
 \usepackage{hyperref}
@@ -69,189 +73,231 @@
 %-------------------------------------------------------------------------------
 %	NAME AND ADDRESS SECTION
 %-------------------------------------------------------------------------------
-\name{Rohan Bavishi}
-\qualification{Senior Undergraduate, Computer Science, IIT Kanpur}
-\emailone{rbavishi@iitk.ac.in}
-\emailtwo{rohan.bavishi95@gmail.com}
-\website{http://home.iitk.ac.in/~rbavishi}{\url{home.iitk.ac.in/~rbavishi}}
-\github{https://github.com/rbavishi}{\url{github.com/rbavishi}}
-\phone{+91-73-180-18920}
+\name{Paul Sebastian Aguilar Enriquez}
+\qualification{Estudiante de Ingenier\'ia en Computaci\'on}
+\phoneone{+52 1 3312438124}
+\phonetwo{+52 1 5545891761}
+\emailone{paul.aguilar.enriquez@hotmail.com}
+%\emailtwo{}
+%\website{http://}{\url{}}
+\github{https://github.com/penserjorne}{\url{github.com/penserbjorne}}
+\linkedin{https://mx.linkedin.com/in/penserbjorne}{\url{mx.linkedin.com/in/penserbjorne}}
 
-\address{C-324, Hall-1\\IIT Kanpur\\Kanpur, Uttar Pradesh, India}
+\address{Nustepec \# 19, CP 04366\\Pedregal de Santo Domingo\\Delegaci\'on Coyoac\'an\\Ciudad de M\'exico, M\'exico}
 %-------------------------------------------------------------------------------
 
 \begin{resume}
 
 %-------------------------------------------------------------------------------
-%	EDUCATION SECTION
+%	ALGO ACERCA DE MI
 %-------------------------------------------------------------------------------
-\section{Education}
-\cusemph{Indian Institute of Technology Kanpur}, Uttar Pradesh, India\\
-{\sl Bachelor of Technology}, Computer Science and Engineering, \timeline{Jul' 13 - Jul' 17 (Expected)}\\
-\cusemph{GPA: 9.7/10} (Overall)\\
+\section{Datos Personales}
+Estudiante de Ingenier\'ia en Computaci\'on en la Facultad de Ingenier\'ia de la Universidad Nacional Aut\'onoma de M\'exico.\\
+Originario de Zapopan, Jalisco, actualmente resido en la Ciudad de M\'exico.\\
+Fecha de nacimiento: 16 de febrero de 1994\\
 \sectionline
 %-------------------------------------------------------------------------------
 
 %-------------------------------------------------------------------------------
-%	RESEARCH SECTION
+%	EDUACION
 %-------------------------------------------------------------------------------
-\section{Research\\Interests}
-\par
-Program Analysis and Verification, Automated Debugging and Synthesis, \\Compiler Optimizations, Decision Procedures
-
-%-------------------------------------------------------------------------------
-%      PUBLICATIONS 
-%-------------------------------------------------------------------------------
-\section{Publications}
-\cusemph{Rohan Bavishi}, Awanish Pandey, Subhajit Roy, ``To Be Precise : Regression Aware Debugging" to appear in \textit{Proceedings of the 2016 ACM International Conference on Object Oriented Programming Systems Languages \& Applications} (OOPSLA), Amsterdam, Netherlands
-
-\cusemph{Rohan Bavishi}, Awanish Pandey, Subhajit Roy, ``Regression Aware Debugging for Mobile Applications" to appear in \textit{Proceedings of the 1$^{st}$ International Workshop on Mobile Development} (Mobile! 2016, part of SPLASH 2016), Amsterdam, Netherlands
-
-\vspace{-2ex}
-\sectionline
-%-------------------------------------------------------------------------------
-%       AWARDS & ACHIEVEMENTS	
-%-------------------------------------------------------------------------------
-\section{Awards \& Achievements}
-Awarded the \cusemph{SIGPLAN PAC Scholarship} for paper presentation at \cusemph{OOPSLA '16}\\
-\cusemph{Academic Excellence Award 2013-14}, IIT Kanpur\\
-Secured an \cusemph{All-India-Rank of 202} in JEE Advanced 2013 amongst 150,000 candidates\\
-Secured an \cusemph{All-India-Rank of 175} in JEE Mains 2013 amongst 20,00,000 candidates\\
-Secured an \cusemph{All-India-Rank of 33} in AMTI-Mathematics Olympiad
-
-\vspace{-2ex}
-\sectionline
-%-------------------------------------------------------------------------------
-
-\section{Research\\Projects}
-\begin{project}
-  \title{New Strategy for Analysis of Concurrent Programs via Sequentialization}
-  \supervisor{Supervisor : Prof. Subhajit Roy}
-  \duration{Aug '16 - Present}
-  \description{
-	- Using \href{http://users.ecs.soton.ac.uk/gp4/cseq/cseq.html}{CSeq} for code-to-code translation of concurrent programs into equivalent sequential ones\\
-	- Devising solving strategies to reduce verification time on existing backends like \href{}{CBMC}\\
-  } 
-\end{project}
-\begin{project}
-  \title{Improving Bug Localization Using Interpolant-Based Proofs}
-  \supervisor{Supervisor : Prof. Subhajit Roy}
-  \duration{Jul '15 - Aug '16}
-  \description{
-	- Devised a new method to improve the quality of bug localizations, in terms of reduced superfluous program locations, for a given set of passing and failing test-cases\\
-	- Interpolants are constructed from passing tests to derive \emph{soft} roadblocks. These roadblocks then discourage localizations violating these interpolants, thereby improving bug localization quality\\
-	- Upto 45\% improvement in localization quality as compared to the state-of-the-art tool BugAssist.\\
-	- \emph{Paper accepted in OOPSLA, one of the premier peer-reviewed conferences in Programming Languages}
-  }
-\end{project}
-\begin{project}
-  \title{Using SAT/QBF-Solvers to Detect Side-Channel Vulnerabilities in Hardware}
-  \supervisor{Supervisors : Prof. Paolo Ienne and Mr. Andrew Becker}
-  \duration{May '16 - Present}
-  \description{
-	- Summer internship project at the Processor Architecture Laboratory, EPFL, Switzerland\\
-	- Studied various side-channel attacks, mitigation techniques and their proofs of effectiveness using formal methods\\
-	- Developed a QBF-Encoding technique to verify whether a cryptographic circuit is secure against a popular side-channel attack based on fault-injection\\
-	- In the process of writing a paper and submitting to a peer-reviewed conference\\
-  }
-\end{project}\newpage
-\begin{project}
-  \title{Implementation of DirectFix in CBMC}
-  \supervisor{Supervisor : Prof. Subhajit Roy}
-  %\links{\href{https://github.com/rbavishi/iCBMC}{Github Link}}
-  \duration{May '15 - Jul '15}
-  \description{
-	- Ported the described \emph{Component-Based-Synthesis} algorithm in \href{https://www.comp.nus.edu.sg/~abhik/pdf/ICSE15-directfix.pdf}{DirectFix} to CBMC\\
-	- Reproduced the experimental results provided in the paper, and devised further optimizations\\
-	- \href{https://github.com/rbavishi/iCBMC}{Github Link}
-  }
-\end{project}
-\vspace{-2ex}
-\sectionline
-%-------------------------------------------------------------------------------
-
-
-%-------------------------------------------------------------------------------
-%	ACADEMIC PROJECTS SECTION
-%-------------------------------------------------------------------------------
-\section{Academic\\Projects}
-\begin{project}
-\title{Re-Inventing A Median Algorithm for Disk-Resident Data}
-\supervisor{Supervisor : Prof. Surender Baswana}
-\duration{Aug '14 - Nov '14}
-\description{
-	- Re-invented a two-pass \textit{deterministic} algorithm to find the median of large data-sets (approx. 1 TB)\\
-	- The algorithm developed was similar to the one described in the \href{http://polylogblog.files.wordpress.com/2009/08/80munro-median.pdf}{paper} by Munro-Paterson (1980)\\
-	- Carried out extensive tests to evaluate the performance of the algorithm\\
-	- \href{https://drive.google.com/file/d/0B0--s-r8CTxgZTU3RzB3YnhMMVU/view}{Report}
-}
-\end{project}
-\begin{project}
-\title{Peer-to-Peer Dropbox}
-\supervisor{Supervisor : Prof. Subhajit Roy}
-\duration{Aug '13 - Nov '13}
-\description{
-	- A linux application for backing-up and syncing files between two or more peers\\
-	- Users have a shared folder across different machines, with local copies. Changes made in any one copy are synced across all devices\\
-	- Linux \emph{inotify} API used to track changes in the shared folder and \emph{rsync} used to sync the modifications to ensure efficient transfer\\
-	- Multithreading with mutexes used to parallelize syncing and file-monitoring operations\\
-	- \href{https://github.com/rbavishi/P2P-Dropbox}{Github Link}
-}
-\end{project}
-\vspace{-2ex}
-\sectionline
-%-------------------------------------------------------------------------------
-
-%-------------------------------------------------------------------------------
-%	COURSE PROJECTS SECTION
-%-------------------------------------------------------------------------------
-\section{Course\\Projects}
-\begin{project}
-\title{End-to-End Compiler for Perl-like Language}
-\supervisor{Course : Compilers $|$ Supervisor : Prof. Subhajit Roy}
-\duration{Jan '15 - Apr '15}
-\description{
-	- Built an end-to-end compiler that takes a subset of the Perl language and outputs MIPS assembly\\
-	- Implemented Features such as \textit{operator overloading}, \textit{dynamic type-checking}, \textit{variable function arguments}, \textit{hashes}, \textit{lists}, \textit{type-based namespaces} etc.\\
-	- \href{https://github.com/vaishious/comperler}{Github Link}
-}
-\end{project}
-\begin{project}
-\title{Integer Superscalar Processor Simulator based on MIPS-R10K}
-\supervisor{Course : Computer Architecture $|$ Supervisor : Prof. Mainak Chaudhuri}
-\duration{Jan '15 - Apr '15}
-\description{
-	- Implemented a superscalar processor simulator based on the MIPS R10K architecture with support for integer instructions only\\
-	- Implemented support for Out-of-Order execution, multiple instruction issue and commit, precise interrupts and branch-misprediction rollback\\
-	- Configurable parameters supported such as issue width, number of functional units, branch-prediction algorithm, RAS/BTB size, active-list size etc.\\
-	- Performed experiments on various synthesized benchmarks to measure performance gains over an in-order processor design. Repeated the experiment with varying parameter configurations\\
-	- \href{https://drive.google.com/file/d/0B0--s-r8CTxgV21IYjJWTUJOdm8/view?usp=sharing}{Report}
-}
-\end{project}
-\vspace{-2ex}
-\sectionline
-%-------------------------------------------------------------------------------
-
-%-------------------------------------------------------------------------------
-%	COMPUTER SKILLS SECTION
-%-------------------------------------------------------------------------------
-\section{Computer\\Skills}
-\cusemph{Languages}: C, C++, Python, Bash, Verilog, \LaTeX, Assembly (x86, MIPS)
+\section{Educaci\'on}
+\cusemph{Universidad Nacional Aut\'onoma de M\'exico}, Ciudad de M\'exico, M\'exico\\
+{\sl Ingenier\'ia en Computaci\'on}, Facultad de Ingenier\'ia. \timeline{Agosto 2014 - Actualidad}\\
+%\cusemph{GPA: 9.0/10} (Overall)\\
 \\
-\cusemph{SAT/SMT Solvers}: MathSAT, Z3, Yices
+\cusemph{Centro de Ense\~nanza T\'ecnica Industrial}, Guadalajara, Jalisco, M\'exico\\
+{\sl Tecn\'ologo en Inform\'atica y Computaci\'on, m\'odulo de ''Software''}\\
+Plantel Colomos. \timeline{Agosto 2009 - Julio 2013}\\
+%\cusemph{GPA: 9.0/10} (Overall)\\
 \\
-\cusemph{Research Tools}: CBMC (Proficient), KLEE, CSeq
+\sectionline
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	EXPERIENCIA LABORAL
+%-------------------------------------------------------------------------------
+\section{Experiencia\\Laboral}
+\begin{project}
+\title{Software de Traceabilidad de Proyectos}
+\supervisor{AVALTO - Ciudad De M\'exico / Guadalajara , M\'exico}
+\duration{Enero 2016 - Marzo 2016}
+\description{
+	- Desarrollo del sistema web STP (Software de Traceabilidad de Proyectos) para la empresa EFIRSA.
+}
+\end{project}
+\begin{project}
+\title{M\'odulos para el sistema scada SIMCOT}
+\supervisor{SICCOA - Ciudad de M\'exico, M\'exico}
+\duration{Marzo 2015 - Julio 2015}
+\description{
+	- Realizaci\'on de dos m\'odulos para el sistema scada SIMCOT de PEMEX.\\
+	- El primer m\'odulo se realiz\'o en C++ con Visual Studio 6.0 para Windows 98. El m\'odulo se desarroll\'o para la planta ''Pajaritos'' de Coatzacoalcos, Veracruz.\\
+	- El segundo m\'odulo se realiz\'o en C++ con Visual Studio 2005 para Windows Server 2003. El m\'odulo se desarroll\'o para la planta de L\'azaro C\'ardenas, Michoac\'an de Ocampo.\\
+	- En ambos m\'odulos se migro el uso de INFORMIX a MySQL.
+}
+\end{project}
+\begin{project}
+\title{Sistema DYSIGA}
+\supervisor{DesarrolloSoft - Zapopan, Jalisco, M\'exico}
+\duration{Enero 2014 - Julio 2014}
+\description{
+	- Desarrollo de los m\'odulos de ''Administraci\'on'' y ''Ventas'' para el sistema DYSIGA de la constructora San Lorenzo.\\
+	- Los m\'odulos fueron desarrollad\'os en WPF 4.5 con Visual Studio 2013.
+}
+\end{project}
+\begin{project}
+\title{Empleado en fonda}
+\supervisor{El sazon de mam\'a - Guadalajara, Jalisco, M\'exico}
+\duration{Diciembre 2013 - Marzo 2014}
+\description{
+	- Realice todas las actividades necesarias en el establecimiento excepto cocinar.\\
+	- Lavaplatos, aguador, mesero, repartidor, intendente.
+}
+\end{project}
+\begin{project}
+\title{Sistema RITAM}
+\supervisor{SI$T^2$ - Zapopan, Jalisco, M\'exico}
+\duration{Septiembre 2013 - Diciembre 2013}
+\description{
+	- Desarrollo web para el sistema RITAM de la empresa IMI.\\
+	- El desarrollo incluyo configuraci\'on y manejo de un servidor SQL Server2008R2.\\
+	- Se desarroll\'o un m\'odulo en Visual Basic 6.0 para bloqueo total de equipos y activaci\'on de una alarma para las estaciones de trabajo.
+}
+\end{project}
+\vspace{-2ex}
+\sectionline
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	IDIOMAS
+%-------------------------------------------------------------------------------
+\section{Idiomas}
+\cusemph{Espa\~nol}: Nativo $|$ \cusemph{Ingl\'es}: Intermedio $|$ \cusemph{Portugu\'es}: B\'asico $|$ \cusemph{Nahuatl}: B\'asico
 
 \vspace{-2ex}
 \sectionline
 %-------------------------------------------------------------------------------
 
 %-------------------------------------------------------------------------------
-%	Interests
+%	CONOCIMIENTOS TECNICOS
 %-------------------------------------------------------------------------------
-\section{Extra Interests}
-\cusemph{Project Euler}: Solved : 257/560 \textit{(India Rank : 11)}\\
-\cusemph{Hobbies}: Competitive Programming, CTF \& Wargames, Quizzing
+\section{Conocimientos\\T\'ecnicos}
+\cusemph{Lenguajes}: C, C++, C\#, Visual Basic, Java, SQL, Ensamblador (x86, microcontroladores), VHDL, PHP, Javascript, HTML, \LaTeX.
+\\
+\cusemph{Sistemas Operativos}: Windows 98 a Windows 10, GNU/Linux, Firefox OS.
+\\
+\cusemph{Plataformas/Software}: git, Visual Studio/.NET, Netbeans, QT Creator, Unreal Engine, Unity, WAMP, Windows Server, Apache, Arduino, MS Office, WPS.
+\\
+\cusemph{Otros}: Conocimientos en electr\'onica (anal\'ogica, digital, de potencia, microcontroladores, microprocesadores, PLD's).
+\\
+Conocimientos b\'asicos de redes y administraci\'on de servidores.
+
+\vspace{-2ex}
+\sectionline
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	VOLUNTARIADO
+%-------------------------------------------------------------------------------
+\section{Voluntariado}
+\begin{project}
+\title{Laboratorio de Investigaci\'on y Desarrollo de Software Libre (LIDSOL)}
+\supervisor{Encargado del LIDSOL}
+\duration{Noviembre 2016 - Actualidad}
+\description{
+Encargado de la reestructuraci\'on y reapertura del Laboratorio de Investigaci\'on y Desarrollo de Software Libre (LIDSOL) de la Facultad de Ingenier\'ia.
+}
+\end{project}
+\begin{project}
+\title{Mozillian en Mozilla Mexico}
+\supervisor{Voluntario en Mozilla M\'exico}
+\duration{Marzo 2015 - Actualidad}
+\description{
+Contribuyo en la comunidad de Mozilla M\'exico apoyando en la secci\'on general, ya sea con material interno de la comunidad o eventos.
+}
+\end{project}
+\begin{project}
+\title{MexMod}
+\supervisor{Roms de Firefox OS}
+\duration{Diciembre 2014 - Abril 2016}
+\description{	
+Compilaba las fuentes de Firefox OS y liberaba las im\'agenes resultantes para ciertas terminales.\\
+\href{http://mexmod.com/}{Sitio de MexMod}
+}
+\end{project}
+\begin{project}
+\title{escuelaIT - CongresoM\'ovilApp2015}
+\supervisor{Charla "Mi primera aplicaci\'on en Firefox OS"}
+\duration{Septiembre 2015}
+\description{	
+En esta charla se explicaron desde conceptos b\'asicos del sistema operativo, su arquitectura, las APIs disponibles, el entorno de trabajo para desarrollar una app, como "localizar" tu app y como subirla al marketplace.
+}
+\end{project}
+\begin{project}
+\title{Mozilla M\'exico}
+\supervisor{Campus Party M\'exico 2015 - CPMX6}
+\duration{Julio 2015}
+\description{	
+Di una peque\~na charla para las comunidades de mi experiencia en Mozilla, el proceso de compilaci\'on de una rom para Firefox OS y el desarrollo de apps para el mismo.
+}
+\end{project}
+\begin{project}
+\title{Hack CDMX}
+\supervisor{Voluntario en el Hack CDMX 2015.}
+\duration{Marzo 2015}
+\description{	}
+\end{project}
+\begin{project}
+\title{Programa Universitario de Bio\'etica, UNAM}
+\supervisor{Voluntario en la campa\~na ''Velo en Perspectiva''}
+\duration{Octubre 2014}
+\description{	
+El enfoque de esta campa\~na fue el realizar consciencia sobre el plagio.}
+\end{project}
+\begin{project}
+\title{UNAM Mobile}
+\supervisor{Voluntario del Congreso Universitario M\'ovil y del HACK UNAM 2014.}
+\duration{Septiembre 2014}
+\description{	}
+\end{project}
+\vspace{-2ex}
+\sectionline
+%-------------------------------------------------------------------------------
+\pagebreak
+%-------------------------------------------------------------------------------
+% PREMIOS
+%-------------------------------------------------------------------------------
+\section{Concursos}
+\begin{project}
+\title{Hackaton Idea Camp 2015}
+\supervisor{Reto de MexBT}
+\duration{Diciembre 2015}
+\description{
+ - Ganador del reto de MexBT en el ''Hackaton Idea Camp 2015''.\\
+ - Se realizo un sistema para mover remesas de Estados Unidos a M\'exico haciendo uso de la API de MexBT.\\
+ - El sistema constaba de dos clientes, un cliente de escritorio desarrollado en WPF/C\# con conexi\'on a MySQL que implementaba la API de MexBT y un cliente web para consulta de datos.
+}
+\end{project}
+\begin{project}
+\title{Hack For Equality}
+\supervisor{Mejor implementaci\'on t\'ecnica}
+\duration{Febrero 2016}
+\description{	
+ - Ganador de "Mejor implementaci\'on t\'ecnica" (3er lugar) en Hack For Equality en la EBC.\\
+ - El proyecto consisti\'o en una app m\'ovil para Firefox OS que permite realizar denuncias an\'onimas que se ven reflejadas en un sitio a trav\'es de mapas (cartoDB).\\
+ - El sistema desarrollado fue nombrado TakPod (denuncia en Maya).
+}
+\end{project}
+\vspace{-2ex}
+\sectionline
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	Hobbies
+%-------------------------------------------------------------------------------
+\section{Pasatiempos}
+Software Libre, Cine, C\'omics, Series, Ciencia Ficci\'on, Anime, Manga, Videojuegos, Basketball, Actividades Recreativas, Comer.
 %-------------------------------------------------------------------------------
 \end{resume}
 \end{document}

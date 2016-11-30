@@ -1,6 +1,8 @@
-.latexmk
-*.swp
-*.swo
-*.out
-*.aux
-*.log
+resume.aux
+resume.fdb_latexmk
+resume.fls
+resume.log
+resume.synctex.gz
+resume.tex~
+simple_style.cls
+simple_style.cls~
